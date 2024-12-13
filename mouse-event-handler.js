@@ -23,7 +23,7 @@ export default class MouseEventHandler {
     this.clickTimeout = null; // 点击事件的超时ID
     this.MOVE_THRESHOLD = config.moveThreshold || 5; // 5px 内不触发事件
     this.CLICK_DELAY = config.clickDelay || 200; // 200ms 内触发双击事件
-    this.RATIO_THRESHOLD = config.ratioThreshold || 7; // 阈值比例 10%
+    this.RATIO_THRESHOLD = config.ratioThreshold || 7; // 阈值比例 7%
     this.THROTTLE_TIME = config.throttleTime || 0; // 节流时间
     // 节流后的拖拽处理函数
     this.throttledDragging = throttle(this.handleDragging.bind(this), this.THROTTLE_TIME);
